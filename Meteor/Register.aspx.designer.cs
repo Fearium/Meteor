@@ -11,7 +11,7 @@ namespace Meteor
 {
 
 
-    public partial class Courses
+    public partial class Register
     {
     }
 }

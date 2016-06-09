@@ -28,7 +28,7 @@
         </div>
         <footer class="footer navbar navbar-fixed-bottom bg-info">
             <div class="container">
-                <p class="text-muted">&copy; 2016 Contoso University</p>
+                <p class="text-muted">&copy; 2016 Meteor</p>
             </div>
         </footer>
     </form>

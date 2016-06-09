@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 /**
  * @author: Jesse Baril
- * @date: June 2nd, 2016
- * @version: 0.0.2 - updated SetActivePage method to include new links
+ * @date: June 8th, 2016
+ * @version: 0.0.3 - updated SetActivePage method to include new links
  */
 
 namespace Meteor
@@ -32,17 +32,14 @@ namespace Meteor
         {
             switch (Page.Title)
             {
-                case "Home Page":
+                case "Home":
                     home.Attributes.Add("class", "active");
                     break;
-                case "Students":
-                    students.Attributes.Add("class", "active");
+                case "Games":
+                    games.Attributes.Add("class", "active");
                     break;
-                case "Courses":
-                    courses.Attributes.Add("class", "active");
-                    break;
-                case "Departments":
-                    departments.Attributes.Add("class", "active");
+                case "Register":
+                    register.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");
