@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Jesse Baril
- * @date: June 8th, 2016
- * @version: 0.0.3
+ * @author: Jesse Baril & Austin Cameron
+ * @date: June 14th, 2016
+ * @version: 0.0.5
  */
 
 namespace Meteor

@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Jesse Baril
- * @date: June 8th, 2016
- * @version: 0.0.3 - updated SetActivePage method to include new links
+ * @author: Jesse Baril & Austin Cameron
+ * @date: June 14th, 2016
+ * @version: 0.0.5
  */
 
 namespace Meteor

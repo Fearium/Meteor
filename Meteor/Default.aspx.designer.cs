@@ -7,20 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Meteor
-{
-
-
-    public partial class _default
-    {
-
-        /// <summary>
-        /// Jumbotron1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Meteor.User_Controls.Jumbotron Jumbotron1;
+namespace Meteor {
+    
+    
+    public partial class _default {
     }
 }
