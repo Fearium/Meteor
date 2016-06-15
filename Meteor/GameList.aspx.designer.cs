@@ -7,20 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Meteor
-{
-
-
-    public partial class Students
-    {
-
+namespace Meteor {
+    
+    
+    public partial class GameList {
+        
         /// <summary>
-        /// StudentsGridView control.
+        /// GamesGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView StudentsGridView;
+        protected global::System.Web.UI.WebControls.GridView GamesGridView;
     }
 }
