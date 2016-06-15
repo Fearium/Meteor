@@ -7,40 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Meteor
-{
-
-
-    public partial class StudentDetails
-    {
-
+namespace Meteor {
+    
+    
+    public partial class GameDetails1 {
+        
         /// <summary>
-        /// LastNameTextBox control.
+        /// Player1TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
-
+        protected global::System.Web.UI.WebControls.TextBox Player1TextBox;
+        
         /// <summary>
-        /// FirstNameTextBox control.
+        /// Player2TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
-
+        protected global::System.Web.UI.WebControls.TextBox Player2TextBox;
+        
         /// <summary>
-        /// EnrollmentDateTextBox control.
+        /// SpectatorsTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EnrollmentDateTextBox;
-
+        protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
+        
+        /// <summary>
+        /// DescriptionTextArea control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DescriptionTextArea;
+        
+        /// <summary>
+        /// WinningPlayerTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox WinningPlayerTextBox;
+        
+        /// <summary>
+        /// DuelDateTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DuelDateTextBox;
+        
         /// <summary>
         /// RangeValidator1 control.
         /// </summary>
@@ -49,7 +74,7 @@ namespace Meteor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
-
+        
         /// <summary>
         /// CancelButton control.
         /// </summary>
@@ -58,7 +83,7 @@ namespace Meteor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CancelButton;
-
+        
         /// <summary>
         /// SaveButton control.
         /// </summary>
