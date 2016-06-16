@@ -12,7 +12,7 @@
                         <asp:BoundField DataField="Player2" HeaderText="Player Two" Visible="true" />
                         <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true" />
                         <asp:BoundField DataField="Description" HeaderText="Highlights" Visible="true" />
-                        <asp:BoundField DataField="WinningPlayer" HeaderText="Player Two" Visible="true" />
+                        <asp:BoundField DataField="WinningPlayer" HeaderText="Winner" Visible="true" />
                         <asp:BoundField DataField="Created" HeaderText="Duel Date" Visible="true" DataFormatString="{0:MMM dd, yyyy}" />
 
                         <asp:HyperLinkField HeaderText="Edit" Text="<i calss='fa fa-encil-square-o fa-lg'></i> Edit"
