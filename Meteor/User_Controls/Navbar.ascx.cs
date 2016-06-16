@@ -33,16 +33,16 @@ namespace Meteor
             switch (Page.Title)
             {
                 case "Home":
-                    home.Attributes.Add("class", "active");
+                    home.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
                 case "Games":
-                    games.Attributes.Add("class", "active");
+                    games.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
                 case "Register":
-                    register.Attributes.Add("class", "active");
+                    register.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
                 case "Contact":
-                    contact.Attributes.Add("class", "active");
+                    contact.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
             }
         }

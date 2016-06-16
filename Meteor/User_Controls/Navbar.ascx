@@ -1,36 +1,46 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="Meteor.Navbar" %>
 
-<header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
+<div class="head">
+    <div id="nav-position" class="nav-position"></div>
+    <div id="navigation-wrapper" class="navigation-wrapper">
+        <div id="navigation-container" class="navigation-container">
+            <div class="navigation navigation--menu">
+                <ul class="menu" id="menu">
 
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="Default.aspx">
-                            <img src="images/logo.png" alt="Logo">
+                    <li class="menu-blog menu__item"><a id="home" runat="server" href="~/Default.aspx" class="menu__link"><span>Home</span></a></li>
+                    <li class="menu-blog menu__item"><a id="games" runat="server" href="~/GameList.aspx" class="menu__link"><span>Games</span></a></li>
+                    <li class="menu-blog menu__item"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
+                    <li class="menu-blog menu__item"><a id="register" runat="server" href="~/Register.aspx" class="menu__link"><span>Register/Login</span></a></li>
+
+                    <!--
+                    <li class="menu-esports menu__item7 menu__item has-dropdown" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+                        <a itemprop="url" href="/hearthstone/en/blog/19968666" data-analytics="primary-nav-link" data-analytics-placement="Esports" class="menu__link">
+                            <span itemprop="name">Esports</span>
+                            <i class="icon-font icon-caret-down icon-caret-down--menu"></i>
                         </a>
+                        <div class="menu-wrapper">
+                            <ul class="menu-dropdown">
+                                <li class="menu-dropdown-list">
+                                    <a class="menu-dropdown__link" href="/hearthstone/en/esports/schedule/" data-analytics="primary-nav-link" data-analytics-placement="Esports - Schedule">Esports Schedule
+                                    </a>
+                                </li>
+                                <li class="menu-dropdown-list">
+                                    <a class="menu-dropdown__link" href="/hearthstone/en/standings/" data-analytics="primary-nav-link" data-analytics-placement="Esports - Standings">Standings
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    -->
+
+                </ul>
+                <div id="right-menu" class="show--lg">
+                    <div id="right-arrow-container">
+                        <div id="right-screw"></div>
+                        <div id="right-arrow"></div>
                     </div>
-                    <!-- /logo -->
                 </div>
-                <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a id="home" runat="server" href="Default.aspx">Home</a></li>
-                            <li><a id="games" runat="server" href="Services.aspx">Games</a></li>
-                            <li><a id="contact" runat="server" href="Projects.aspx">Contact</a></li>
-                            <li><a id="register" runat="server" href="About.aspx">Register/Login</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- /main nav -->
             </div>
-        </header>
+        </div>
+    </div>
+</div>

@@ -108,7 +108,19 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Images\body-content-bg.jpg" />
+    <Content Include="Images\footer-bg.jpg" />
+    <Content Include="Images\header-mantle.png" />
+    <Content Include="Images\logo-sub.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\nav-bg.png" />
+    <Content Include="Images\nav-darker-brick.png" />
+    <Content Include="Images\nav-right-under-arrow.png" />
+    <Content Include="Images\nav-right-under-screw.png" />
+    <Content Include="Images\nav-right-under.png" />
+    <Content Include="Images\page-bg.gif" />
+    <Content Include="Images\sprite-16-white.png" />
+    <Content Include="Images\sprite-24-hsorange.png" />
+    <Content Include="Images\sub-header-bg02.jpg" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -130,7 +142,6 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Register.aspx" />
-    <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -153,6 +164,8 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\blizzard-light.woff" />
+    <Content Include="fonts\blizzard-regular.woff" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
@@ -260,13 +273,6 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\Jumbotron.ascx.cs">
-      <DependentUpon>Jumbotron.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User_Controls\Jumbotron.ascx.designer.cs">
-      <DependentUpon>Jumbotron.ascx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
