@@ -44,6 +44,12 @@ namespace Meteor
                 case "Contact":
                     contact.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
+                case "Users":
+                    users.Attributes.Add("class", "menu__link menu__link--is-active");
+                    break;
+                case "Logout":
+                    logout.Attributes.Add("class", "menu__link menu__link--is-active");
+                    break;
             }
         }
     }

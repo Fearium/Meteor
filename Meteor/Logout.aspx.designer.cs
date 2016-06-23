@@ -11,7 +11,7 @@ namespace Meteor
 {
 
 
-    public partial class Departments
+    public partial class Logout
     {
     }
 }

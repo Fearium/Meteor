@@ -7,10 +7,24 @@
             <div class="navigation navigation--menu">
                 <ul class="menu" id="menu">
 
-                    <li class="menu-blog menu__item"><a id="home" runat="server" href="~/Default.aspx" class="menu__link"><span>Home</span></a></li>
-                    <li class="menu-blog menu__item"><a id="games" runat="server" href="~/GameList.aspx" class="menu__link"><span>Games</span></a></li>
-                    <li class="menu-blog menu__item"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
-                    <li class="menu-blog menu__item"><a id="register" runat="server" href="~/Register.aspx" class="menu__link"><span>Register/Login</span></a></li>
+                    <li class="menu-blog menu__item" runat="server"><a id="home" runat="server" href="~/Default.aspx" class="menu__link"><span>Home</span></a></li>
+                    <li class="menu-blog menu__item" runat="server"><a id="games" runat="server" href="~/GameList.aspx" class="menu__link"><span>Games</span></a></li>
+                    <li class="menu-blog menu__item" runat="server"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
+
+                    <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="register" runat="server" href="~/Register.aspx" class="menu__link"><span>Register/Login</span></a></li>
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="UserPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="users" runat="server" href="/Admin/Users.aspx" class="menu__link"><span>Users</span></a></li>
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="MeteorTrackingPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="logout" runat="server" href="/Logout.aspx" class="menu__link"><span>Logout</span></a></li>
+                    </asp:PlaceHolder>
+
+                    
+ 
 
                     <!--
                     <li class="menu-esports menu__item7 menu__item has-dropdown" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">

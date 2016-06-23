@@ -135,9 +135,8 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GameDetails.aspx" />
+    <Content Include="MeteorTracking\GameDetails.aspx" />
     <Content Include="GameList.aspx" />
-    <Content Include="GameView.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Images\body-content-bg.jpg" />
     <Content Include="Images\Favicon.ico" />
@@ -155,6 +154,8 @@
     <Content Include="Images\sprite-16-white.png" />
     <Content Include="Images\sprite-24-hsorange.png" />
     <Content Include="Images\sub-header-bg02.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ContosoModel.edmx</DependentUpon>
@@ -223,7 +224,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contact.aspx.cs">
@@ -240,11 +243,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameDetails.aspx.cs">
+    <Compile Include="MeteorTracking\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameDetails.aspx.designer.cs">
+    <Compile Include="MeteorTracking\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="GameList.aspx.cs">
@@ -254,12 +257,19 @@
     <Compile Include="GameList.aspx.designer.cs">
       <DependentUpon>GameList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameView.aspx.cs">
-      <DependentUpon>GameView.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameView.aspx.designer.cs">
-      <DependentUpon>GameView.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -316,6 +326,7 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="User_Controls\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -336,6 +347,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\" />
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

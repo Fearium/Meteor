@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h1>HearthStone Duels</h1>
-                <a href="GameDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add Game</a>
+                <a href="MeteorTracking/GameDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add Game</a>
                 <asp:GridView ID="GamesGridView" CssClass="table table-bordered table-striped table-hover" AutoGenerateColumns="false" runat="server"
                      DataKeyNames="GameID" OnRowDeleting="GamesGridView_RowDeleting">
                     <Columns>
@@ -16,8 +16,8 @@
                         <asp:BoundField DataField="Created" HeaderText="Duel Date" Visible="true" DataFormatString="{0:MMM dd, yyyy}" />
 
                         <asp:HyperLinkField HeaderText="Edit" Text="<i calss='fa fa-encil-square-o fa-lg'></i> Edit"
-                            NavigateUrl="GameDetails.aspx"  ControlStyle-CssClass="btn btn-primary btn-sm" DataNavigateUrlFields="GameID"
-                            runat="server" DataNavigateUrlFormatString="GameDetails.aspx?GameID={0}" />
+                            NavigateUrl="MeteorTracking/GameDetails.aspx"  ControlStyle-CssClass="btn btn-primary btn-sm" DataNavigateUrlFields="GameID"
+                            runat="server" DataNavigateUrlFormatString="MeteorTracking/GameDetails.aspx?GameID={0}" />
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
                             ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
