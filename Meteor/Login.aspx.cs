@@ -48,5 +48,11 @@ namespace Meteor
                 AlertFlash.Visible = true;
             }
         }
+
+        protected void RegisterButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to the Main Menu Page
+            Response.Redirect("/Register.aspx");
+        }
     }
 }

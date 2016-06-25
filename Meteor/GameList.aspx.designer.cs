@@ -13,6 +13,15 @@ namespace Meteor {
     public partial class GameList {
         
         /// <summary>
+        /// TrackingDateLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TrackingDateLabel;
+        
+        /// <summary>
         /// GamesGridView control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,14 @@ namespace Meteor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GamesGridView;
+        
+        /// <summary>
+        /// TrackingWeekDropDown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TrackingWeekDropDown;
     }
 }

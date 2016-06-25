@@ -5,6 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+// Required for Identity and OWIN Security
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+
 /**
  * @author: Jesse Baril & Austin Cameron
  * @date: June 14th, 2016
@@ -17,7 +22,27 @@ namespace Meteor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
+            if (!IsPostBack)
+            {
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    MeteorTrackingPlaceHolder.Visible = true;
+                    PublicPlaceHolder.Visible = false;
+                    UserPlaceHolder.Visible = false;
+
+                    if (HttpContext.Current.User.Identity.GetUserName() == "admin")
+                    {
+                        UserPlaceHolder.Visible = true;
+                    }
+                }
+                else
+                {
+                    MeteorTrackingPlaceHolder.Visible = false;
+                    PublicPlaceHolder.Visible = true;
+                    UserPlaceHolder.Visible = false;
+                }
+                SetActivePage();
+            }
         }
 
         /**

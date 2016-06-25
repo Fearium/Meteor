@@ -12,7 +12,7 @@
                     <li class="menu-blog menu__item" runat="server"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
 
                     <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
-                        <li class="menu-blog menu__item" runat="server"><a id="register" runat="server" href="~/Register.aspx" class="menu__link"><span>Register/Login</span></a></li>
+                        <li class="menu-blog menu__item" runat="server"><a id="register" runat="server" href="/Login.aspx" class="menu__link"><span>Login/Register</span></a></li>
                     </asp:PlaceHolder>
 
                     <asp:PlaceHolder ID="UserPlaceHolder" runat="server">

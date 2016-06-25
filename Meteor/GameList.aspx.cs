@@ -29,12 +29,22 @@ namespace Meteor
             // Connect to EF
             using (TrackingConnection db = new TrackingConnection())
             {
-                // Query the departments table using EF and LINQ
-                var Games = (from allGames in db.Games select allGames);
 
-                // Bind results to gridview
+                DateTime date1 = new DateTime();
+                DateTime date2 = new DateTime();
+                date1 = Convert.ToDateTime(TrackingWeekDropDown.SelectedValue);
+                date2 = Convert.ToDateTime(TrackingWeekDropDown.Items[TrackingWeekDropDown.SelectedIndex + 1].Value);
+
+                //query the Games table using EF and LINQ
+                var Games = (from allGames in db.Games
+                             where allGames.Created >= date1.Date
+                             && allGames.Created < date2.Date
+                             select allGames);
+
+                //bind results to gridview
                 GamesGridView.DataSource = Games.AsQueryable().ToList();
                 GamesGridView.DataBind();
+                TrackingDateLabel.Text = date1.ToString("MMMM dd, yyyy") + " To " + date2.ToString("MMMM dd, yyyy");
             }
         }
 
@@ -64,6 +74,10 @@ namespace Meteor
                 this.GetGames();
 
             }
+        }
+        protected void TrackingWeekDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.GetGames();
         }
     }
 }
