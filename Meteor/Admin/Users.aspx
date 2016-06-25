@@ -3,11 +3,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
+            <div class="col-md-offset-4 col-md-8">
+                <img src="../Images/LogoMeteor.png" class="img-responsive" alt="Responsive image">
+            </div>
             <div class="col-md-offset-2 col-md-8">
                 <h1>Users</h1>
                 <a href="/User/UserDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Register New User</a>
                 <asp:GridView runat="server" ID="UsersGridView" AutoGenerateColumns="false"
-                    CssClass="table table-bordered table-striped table-hover" OnRowDeleting="UsersGridView_RowDeleting" DataKeyNames="Id">
+                    CssClass="table table-hover" OnRowDeleting="UsersGridView_RowDeleting" DataKeyNames="Id">
                     <Columns>
                         <asp:BoundField DataField="UserName" HeaderText="User Name" Visible="true" />
                         <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" Visible="true" />

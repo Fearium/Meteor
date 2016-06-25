@@ -9,6 +9,13 @@ using System.Web.UI.WebControls;
 using Meteor.Models;
 using System.Web.ModelBinding;
 
+
+/**
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
+ */
+
 namespace Meteor.Admin
 {
     public partial class Users : System.Web.UI.Page
@@ -20,6 +27,15 @@ namespace Meteor.Admin
                 this.GetUsers();
             }
         }
+
+        /**
+         * Gets the user to populate fields
+         * relating to the current page
+         * 
+         * @private
+         * @method GetUsers
+         * @return {void}
+         */
         protected void GetUsers()
         {
             using (UserConnection db = new UserConnection())
@@ -31,6 +47,14 @@ namespace Meteor.Admin
             }
         }
 
+        /**
+         * On Delete
+         * relating to the current page
+         * 
+         * @private
+         * @method UsersGridView_RowDeleting
+         * @return {void}
+         */
         protected void UsersGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int selectedRow = e.RowIndex;

@@ -3,11 +3,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
+            <div class="col-md-offset-3 col-md-9">
+                <img src="Images/logo-sub.png" class="img-responsive" alt="Responsive image">
+            </div>
             <div class="col-md-offset-1 col-md-10">
                 <h3><asp:Label ID="TrackingDateLabel" runat="server"></asp:Label></h3>
                 <h1>HearthStone Duels</h1>
                 <a href="MeteorTracking/GameDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
-                <asp:GridView ID="GamesGridView" CssClass="table table-bordered table-striped table-hover" AutoGenerateColumns="false" runat="server"
+                <asp:GridView ID="GamesGridView" CssClass="table table-hover" AutoGenerateColumns="false" runat="server"
                     DataKeyNames="GameID" OnRowDeleting="GamesGridView_RowDeleting">
                     <Columns>
                         <asp:BoundField DataField="Player1" HeaderText="Player One" Visible="true" />
@@ -16,12 +19,6 @@
                         <asp:BoundField DataField="Description" HeaderText="Highlights" Visible="true" />
                         <asp:BoundField DataField="WinningPlayer" HeaderText="Winner" Visible="true" />
                         <asp:BoundField DataField="Created" HeaderText="Duel Date" Visible="true" DataFormatString="{0:MMM dd, yyyy}" />
-
-                        <%--<asp:HyperLinkField HeaderText="Edit" Text="<i calss='fa fa-encil-square-o fa-lg'></i> Edit"
-                            NavigateUrl="MeteorTracking/GameDetails.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" DataNavigateUrlFields="GameID"
-                            runat="server" DataNavigateUrlFormatString="MeteorTracking/GameDetails.aspx?GameID={0}" />
-                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
-                            ControlStyle-CssClass="btn btn-danger btn-sm" />--%>
                     </Columns>
                 </asp:GridView>
                 <label for="PageSizeDropDownList"></label>

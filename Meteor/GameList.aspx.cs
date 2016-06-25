@@ -9,7 +9,12 @@ using Meteor.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
-// Jesse Baril & Austin Cameron
+
+/**
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
+ */
 
 namespace Meteor
 {
@@ -24,6 +29,14 @@ namespace Meteor
                 this.GetGames();
             }
         }
+
+        /**
+         * <summary>
+         * This method gets the game from the database and populates the fields
+         * </summary>
+         * @method GetGames
+         * @return {void}
+         * */
         protected void GetGames()
         {
             // Connect to EF
@@ -48,6 +61,13 @@ namespace Meteor
             }
         }
 
+        /**
+         * <summary>
+         * On Delete
+         * </summary>
+         * @method GamesGridView_RowDeleting
+         * @return {void}
+         * */
         protected void GamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             // Store which row was clicked
@@ -75,6 +95,14 @@ namespace Meteor
 
             }
         }
+
+        /**
+         * <summary>
+         * Initiates sorting
+         * </summary>
+         * @method TrackingWeekDropDown_SelectedIndexChanged
+         * @return {void}
+         * */
         protected void TrackingWeekDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.GetGames();

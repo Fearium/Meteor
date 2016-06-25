@@ -10,6 +10,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+
+/**
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
+ */
+
 namespace Meteor
 {
     public partial class Login : System.Web.UI.Page
@@ -19,6 +26,13 @@ namespace Meteor
 
         }
 
+        /**
+         * <summary>
+         * Saves
+         * </summary>
+         * @method LoginButton_Click
+         * @return {void}
+         * */
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             // Create new userStore and userManager objects
@@ -49,6 +63,13 @@ namespace Meteor
             }
         }
 
+        /**
+         * <summary>
+         * Redirects
+         * </summary>
+         * @method RegisterButton_Click
+         * @return {void}
+         * */
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
             // Redirect to the Main Menu Page

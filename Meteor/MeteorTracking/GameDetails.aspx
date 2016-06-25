@@ -3,6 +3,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
+            <div class="col-md-offset-4 col-md-8">
+                <img src="../Images/LogoMeteor.png" class="img-responsive" alt="Responsive image">
+            </div>
             <div class="col-md-offset-3 col-md-6">
                 <h1>Game details</h1>
                 <h5>All fields are required</h5>

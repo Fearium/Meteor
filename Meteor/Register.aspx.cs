@@ -10,6 +10,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+
+/**
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
+ */
+
 namespace Meteor
 {
     public partial class Register : System.Web.UI.Page

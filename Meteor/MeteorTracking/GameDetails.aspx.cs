@@ -32,6 +32,14 @@ namespace Meteor
             }
         }
 
+        /**
+         * Gets the game to populate fields
+         * relating to the current page
+         * 
+         * @private
+         * @method GetGame
+         * @return {void}
+         */
         protected void GetGame()
         {
             // Populate the form with existing data from the database
@@ -63,7 +71,7 @@ namespace Meteor
             // Use EF to connect to the server
             using (TrackingConnection db = new TrackingConnection())
             {
-                // Use the Student model to create a new student object and save a new record
+                // Use the games model to create a new games object and save a new record
                 Game newGame = new Game();
 
                 int GameID = 0;
@@ -73,13 +81,13 @@ namespace Meteor
                     // Get the id from the URL
                     GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-                    // Get the current student from EF DB
+                    // Get the current games from EF DB
                     newGame = (from Game in db.Games
                                where Game.GameID == GameID
                                select Game).FirstOrDefault();
                 }
 
-                // Add data to the new student record
+                // Add data to the new games record
                 newGame.GameName = "HearthStone Duel";
                 newGame.Player1 = Player1TextBox.Text;
                 newGame.Player2 = Player2TextBox.Text;
@@ -88,7 +96,7 @@ namespace Meteor
                 newGame.WinningPlayer = WinningPlayerTextBox.Text;
                 newGame.Created = Convert.ToDateTime(DuelDateTextBox.Text);
 
-                // Use LINQ to ADO.NET to add or insert new student into the database
+                // Use LINQ to ADO.NET to add or insert new games into the database
                 if (GameID == 0)
                 {
                     db.Games.Add(newGame);
@@ -99,12 +107,12 @@ namespace Meteor
 
                 if (HttpContext.Current.User.Identity.GetUserName() == "admin")
                 {
-                    // Redirect back to the updated students page
+                    // Redirect back to the updated games page
                     Response.Redirect("~/Admin/AdminGameList.aspx");
                 }
                 else
                 {
-                    // Redirect back to the updated students page
+                    // Redirect back to the updated games page
                     Response.Redirect("~/GameList.aspx");
                 }
                 
@@ -113,7 +121,7 @@ namespace Meteor
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            // Redirect back to Students Page
+            // Redirect back to games Page
             Response.Redirect("~/GameList.aspx");
         }
     }

@@ -14,6 +14,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
+
+/**
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
+ */
+
 namespace Meteor.Admin
 {
     public partial class UserDetails : System.Web.UI.Page
@@ -34,6 +41,12 @@ namespace Meteor.Admin
             }
         }
 
+        /**
+         *Gets the user to populate
+         * @private
+         * @method GetUser
+         * @return {void}
+         */
         protected void GetUser()
         {
             string UserID = Request.QueryString["Id"].ToString();
@@ -53,6 +66,13 @@ namespace Meteor.Admin
             }
         }
 
+        /**
+         * On Save Button Click
+         * 
+         * @private
+         * @method SaveButton_Click
+         * @return {void}
+         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             string UserID = "";
@@ -112,6 +132,13 @@ namespace Meteor.Admin
             }
         }
 
+        /**
+         * On Cancel button click
+         * 
+         * @private
+         * @method CancelButton_Click
+         * @return {void}
+         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             // Redirect to Users page
