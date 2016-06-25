@@ -12,7 +12,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 /**
  * @author: Jesse Baril - Austin Cameron
- * @date: June 22nd, 2016
+ * @date: June 24th, 2016
  * @version: 0.0.1 - Created page
  */
 

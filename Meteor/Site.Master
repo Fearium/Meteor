@@ -27,15 +27,29 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer class="footer navbar navbar-fixed-bottom bg-info">
+
+        <footer class="footer navbar navbar-fixed-bottom bg-info" id="footer">
             <div class="container">
-                <p class="text-muted">&copy; 2016 Meteor Tracking</p>
+            <div class="col-md-8">
+                <p class="copyright">&copy; 2016 Meteor Tracking</p>
             </div>
+            <div class="col-md-4">
+                <!-- Social Media -->
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/groups/1566405503662496/" class="Facebook">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
         </footer>
     </form>
 
     <!-- JS -->
-    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/custom.js"></script>
 

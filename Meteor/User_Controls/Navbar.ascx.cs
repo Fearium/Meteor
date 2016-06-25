@@ -11,9 +11,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
 /**
- * @author: Jesse Baril & Austin Cameron
- * @date: June 14th, 2016
- * @version: 0.0.5
+ * @author: Jesse Baril - Austin Cameron
+ * @date: June 24th, 2016
+ * @version: 0.0.5 - Updated page
  */
 
 namespace Meteor
@@ -85,6 +85,12 @@ namespace Meteor
                     break;
                 case "Logout":
                     logout.Attributes.Add("class", "menu__link menu__link--is-active");
+                    break;
+                case "Profile":
+                    profile.Attributes.Add("class", "menu__link menu__link--is-active");
+                    break;
+                case "Games (Admin)":
+                    adminGames.Attributes.Add("class", "menu__link menu__link--is-active");
                     break;
             }
         }
