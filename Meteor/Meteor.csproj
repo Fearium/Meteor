@@ -125,6 +125,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminGameList.aspx" />
     <Content Include="Admin\UserDetails.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Contact.aspx" />
@@ -188,6 +189,7 @@
       <DependentUpon>UserModel.edmx</DependentUpon>
       <LastGenOutput>UserModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -248,6 +250,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminGameList.aspx.cs">
+      <DependentUpon>AdminGameList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminGameList.aspx.designer.cs">
+      <DependentUpon>AdminGameList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UserDetails.aspx.cs">
       <DependentUpon>UserDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -378,6 +387,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

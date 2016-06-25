@@ -7,45 +7,44 @@
             <div class="navigation navigation--menu">
                 <ul class="menu" id="menu">
 
+                    <!-- Anonymous, admin and user see this -->
                     <li class="menu-blog menu__item" runat="server"><a id="home" runat="server" href="~/Default.aspx" class="menu__link"><span>Home</span></a></li>
-                    <li class="menu-blog menu__item" runat="server"><a id="games" runat="server" href="~/GameList.aspx" class="menu__link"><span>Games</span></a></li>
-                    <li class="menu-blog menu__item" runat="server"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
 
-                    <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                    <asp:PlaceHolder ID="GamesPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="games" runat="server" href="~/GameList.aspx" class="menu__link"><span>Games</span></a></li>
+                    </asp:PlaceHolder>
+                    <!-- Anonymous, admin and user see this END -->
+
+                    <!-- Admin see this -->
+                    <asp:PlaceHolder ID="AdminPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="users" runat="server" href="/Admin/Users.aspx" class="menu__link"><span>Users</span></a></li>
+                        <li class="menu-blog menu__item" runat="server"><a id="adminGames" runat="server" href="/Admin/AdminGameList.aspx" class="menu__link"><span>Games</span></a></li>
+                    </asp:PlaceHolder>
+                    <!-- Admin see this END -->
+
+                    <!-- Anonymous, admin and user see this -->
+                    <asp:PlaceHolder ID="ProfilePlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="profile" runat="server" href="~/Profile.aspx" class="menu__link"><span>Profile</span></a></li>
+                    </asp:PlaceHolder>
+                    <!-- Anonymous, admin and user see this END -->
+
+                    <!-- Anonymous, admin and user see this -->
+                    <asp:PlaceHolder ID="ContactPlaceHolder" runat="server">
+                        <li class="menu-blog menu__item" runat="server"><a id="contact" runat="server" href="~/Contact.aspx" class="menu__link"><span>Contact</span></a></li>
+                    </asp:PlaceHolder>
+                    <!-- Anonymous, admin and user see this END -->
+
+                    <!-- Anonymous see this -->
+                    <asp:PlaceHolder ID="LoginPlaceHolder" runat="server">
                         <li class="menu-blog menu__item" runat="server"><a id="register" runat="server" href="/Login.aspx" class="menu__link"><span>Login/Register</span></a></li>
                     </asp:PlaceHolder>
+                    <!-- Anonymous see this END -->
 
-                    <asp:PlaceHolder ID="UserPlaceHolder" runat="server">
-                        <li class="menu-blog menu__item" runat="server"><a id="users" runat="server" href="/Admin/Users.aspx" class="menu__link"><span>Users</span></a></li>
-                    </asp:PlaceHolder>
-
-                    <asp:PlaceHolder ID="MeteorTrackingPlaceHolder" runat="server">
+                    <!-- Regular users and admin see this -->
+                    <asp:PlaceHolder ID="LogoutPlaceHolder" runat="server">
                         <li class="menu-blog menu__item" runat="server"><a id="logout" runat="server" href="/Logout.aspx" class="menu__link"><span>Logout</span></a></li>
                     </asp:PlaceHolder>
-
-                    
- 
-
-                    <!--
-                    <li class="menu-esports menu__item7 menu__item has-dropdown" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                        <a itemprop="url" href="/hearthstone/en/blog/19968666" data-analytics="primary-nav-link" data-analytics-placement="Esports" class="menu__link">
-                            <span itemprop="name">Esports</span>
-                            <i class="icon-font icon-caret-down icon-caret-down--menu"></i>
-                        </a>
-                        <div class="menu-wrapper">
-                            <ul class="menu-dropdown">
-                                <li class="menu-dropdown-list">
-                                    <a class="menu-dropdown__link" href="/hearthstone/en/esports/schedule/" data-analytics="primary-nav-link" data-analytics-placement="Esports - Schedule">Esports Schedule
-                                    </a>
-                                </li>
-                                <li class="menu-dropdown-list">
-                                    <a class="menu-dropdown__link" href="/hearthstone/en/standings/" data-analytics="primary-nav-link" data-analytics-placement="Esports - Standings">Standings
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    -->
+                    <!-- Regular users and admin see this END -->
 
                 </ul>
                 <div id="right-menu" class="show--lg">

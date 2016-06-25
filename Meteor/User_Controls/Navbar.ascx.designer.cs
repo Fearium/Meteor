@@ -22,6 +22,15 @@ namespace Meteor {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor home;
         
         /// <summary>
+        /// GamesPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder GamesPlaceHolder;
+        
+        /// <summary>
         /// games control.
         /// </summary>
         /// <remarks>
@@ -31,40 +40,13 @@ namespace Meteor {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor games;
         
         /// <summary>
-        /// contact control.
+        /// AdminPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor contact;
-        
-        /// <summary>
-        /// PublicPlaceHolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceHolder;
-        
-        /// <summary>
-        /// register control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor register;
-        
-        /// <summary>
-        /// UserPlaceHolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder UserPlaceHolder;
+        protected global::System.Web.UI.WebControls.PlaceHolder AdminPlaceHolder;
         
         /// <summary>
         /// users control.
@@ -76,13 +58,76 @@ namespace Meteor {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor users;
         
         /// <summary>
-        /// MeteorTrackingPlaceHolder control.
+        /// adminGames control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder MeteorTrackingPlaceHolder;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor adminGames;
+        
+        /// <summary>
+        /// ProfilePlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ProfilePlaceHolder;
+        
+        /// <summary>
+        /// profile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor profile;
+        
+        /// <summary>
+        /// ContactPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ContactPlaceHolder;
+        
+        /// <summary>
+        /// contact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor contact;
+        
+        /// <summary>
+        /// LoginPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder LoginPlaceHolder;
+        
+        /// <summary>
+        /// register control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor register;
+        
+        /// <summary>
+        /// LogoutPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder LogoutPlaceHolder;
         
         /// <summary>
         /// logout control.

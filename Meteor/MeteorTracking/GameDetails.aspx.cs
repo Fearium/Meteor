@@ -9,6 +9,10 @@ using System.Web.UI.WebControls;
 using Meteor.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
+// Required for Identity and OWIN Security
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 
 // Jesse Baril & Austin Cameron
 
@@ -89,8 +93,17 @@ namespace Meteor
                 // Save our changes
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
-                Response.Redirect("~/GameList.aspx");
+                if (HttpContext.Current.User.Identity.GetUserName() == "admin")
+                {
+                    // Redirect back to the updated students page
+                    Response.Redirect("~/Admin/AdminGameList.aspx");
+                }
+                else
+                {
+                    // Redirect back to the updated students page
+                    Response.Redirect("~/GameList.aspx");
+                }
+                
             }
         }
 

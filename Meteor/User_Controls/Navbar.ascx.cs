@@ -26,20 +26,31 @@ namespace Meteor
             {
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
-                    MeteorTrackingPlaceHolder.Visible = true;
-                    PublicPlaceHolder.Visible = false;
-                    UserPlaceHolder.Visible = false;
+                    GamesPlaceHolder.Visible = true;
+                    AdminPlaceHolder.Visible = false;
+                    ContactPlaceHolder.Visible = true;
+                    LoginPlaceHolder.Visible = false;
+                    LogoutPlaceHolder.Visible = true;
+                    ProfilePlaceHolder.Visible = true;
 
                     if (HttpContext.Current.User.Identity.GetUserName() == "admin")
                     {
-                        UserPlaceHolder.Visible = true;
+                        GamesPlaceHolder.Visible = false;
+                        AdminPlaceHolder.Visible = true;
+                        ContactPlaceHolder.Visible = true;
+                        LoginPlaceHolder.Visible = false;
+                        LogoutPlaceHolder.Visible = true;
+                        ProfilePlaceHolder.Visible = true;
                     }
                 }
                 else
                 {
-                    MeteorTrackingPlaceHolder.Visible = false;
-                    PublicPlaceHolder.Visible = true;
-                    UserPlaceHolder.Visible = false;
+                    GamesPlaceHolder.Visible = true;
+                    AdminPlaceHolder.Visible = false;
+                    ContactPlaceHolder.Visible = true;
+                    LoginPlaceHolder.Visible = true;
+                    LogoutPlaceHolder.Visible = false;
+                    ProfilePlaceHolder.Visible = false;
                 }
                 SetActivePage();
             }
